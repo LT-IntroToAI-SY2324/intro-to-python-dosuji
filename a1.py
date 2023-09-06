@@ -25,7 +25,11 @@ def absolute(n: int) -> int:
     Returns:
         the absolute value of the passed in number
     """
-    raise NotImplementedError("absolute")
+    if n<0:
+        return -1*n
+    else: 
+        return n
+    
 
 
 def factorial(n: int) -> int:
@@ -38,7 +42,10 @@ def factorial(n: int) -> int:
     Returns:
         factorial of the passed in number
     """
-    raise NotImplementedError("factorial")
+    if n<=1:
+        return 1
+    else:
+        return n*(factorial(n-1))
 
 
 T = TypeVar("T")
@@ -55,7 +62,11 @@ def every_other(lst: List[T]) -> List[T]:
     Returns:
         a list of every of other item in the original list starting with the first
     """
-    raise NotImplementedError("every_other")
+    my_list=[]
+    for x in range(0,len(lst),2):
+        my_list.append(lst[x])
+    return my_list
+
 
 
 def sum_list(lst: List[int]) -> int:
@@ -68,7 +79,11 @@ def sum_list(lst: List[int]) -> int:
     Returns:
         the sum of the passed in list
     """
-    raise NotImplementedError("sum_list")
+    num=0
+    for x in range(0,len(lst)):
+        num=num + lst[x]
+    return num
+    
 
 
 def mean(lst: List[int]) -> float:
@@ -80,7 +95,11 @@ def mean(lst: List[int]) -> float:
     Returns:
         the mean of the passed in list
     """
-    raise NotImplementedError("mean")
+    decimal=0.0
+    for x in range(0,len(lst)):
+        decimal=decimal + lst[x]
+    return decimal/len(lst)
+    
 
 
 def median(lst: List[int]) -> float:
@@ -95,7 +114,14 @@ def median(lst: List[int]) -> float:
     Returns:
         the median of the passed in list
     """
-    raise NotImplementedError("median")
+    if len(lst) % 2 == 0 :
+        mid1 = lst[len(lst)/2 -1]
+        mid2 = lst[len(lst)/2]
+        median = (mid1+mid2) /2
+    else:
+        median = lst[len(lst)/2]
+    return median
+    
 
 
 def duck_duck_goose(lst: List[str]) -> List[str]:
@@ -117,6 +143,12 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
     Returns:
         the resulting list after playing duck duck goose
     """
+    count = 1
+    while len(lst) > 2:
+        count=count+1
+        if count % 3 ==0:
+            lst.pop(count)
+    return lst
     raise NotImplementedError("duck_duck_goose")
 
 
