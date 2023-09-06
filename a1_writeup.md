@@ -13,11 +13,13 @@ Mr. Berg will look at all your files to determine what you have completed.  If t
 ## Reflection Questions
 
 1. What is your initial thoughts about the python programming language?
-
+Answer: My initial thouhts about the python programming language is that it seems easier to understand than Java in AP CS A, since the syntax is simplier and there is not a heavy neccessity for "SEMI-COLONS".
 
 
 2. Describe some similarities and differences that you found between python and other programming languages you have used in the past?
-
+Answer: Similiarites- Python and Java are both object-oriented prgramming langauges with extensive standard libraries; both use functions that do not necessarily rely on class definitions being made.
+Differences- Python is easier to understand, since it is more interpretable; Java is harder to understand/more complex in a sense since the syntax for Java is more tedious.
 
 
 3. What are some things that you learned through this assignment?
+I learned that ChatGpt works wonders for programming and that I should find a new career before AI takes over. But on a more serious note, I have learned more about the way Python relates to Java and how to translate my Java thought process into a Python thought process.
